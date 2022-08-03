@@ -1,0 +1,42 @@
+**VARIÁVEIS**
+string texto;
+char caratere;
+int numeroInteiro;
+decimal numeroDecimal = 10.9m; //ou 10.9M
+bool variavel;
+var variavel = [valor]; //força o compilador a inferir o tipo, precisa atribuir logo em seguida o valor
+
+**OUTPUT**
+Console.Write("") //imprime a mensagem
+Console.WriteLine("") //imprime a mensagem e pula linha
+Console.WriteLine(@"    C:\source\repos
+        (this is wuere your code goes)"); //verbatim string literal
+// Kon'nichiwa World
+Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!"); //unicode escape characters
+Console.WriteLine($"{greeting} {firstName}!"); //string interpolation
+Console.WriteLine($@"C:\Output\{projectName}\Data"); //combina string interpolation e verbatim literals
+
+**OPERADORES**
+decimal decimalQuotient = 7.0m/5; //ao menos um operando tem de ser decimal
+decimal quotient = (decimal)firstInt / (decimal)secondInt;
+System.Math.Pow(x,y); //x^y
+int incrementado = i++ //atribui o valor de i e depois incrementa
+int incrementado = ++i //incrementa o valor de i e depois atribui
+
+**STRINGS**
+//concatenar numero e string gera string
+
+**VETORES**
+int[] vetor = new int[TAM];
+int[] vetor = {1,2,3};
+vetor.Lenght
+
+**LAÇOS**
+foreach (int elemento in vetor){
+	//bloco
+}
+
+**CLASSES**
+Random dice = new Random();
+int roll = dice.Next(1,7); //gera números aleatórios entre 1 e 6
+//static significa que o método é stateless, não necessita de uma instância do objeto (acesso à memória) para funcionar, ao contrários dos stateful

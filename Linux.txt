@@ -1,0 +1,81 @@
+username@machinename:(current working directory)$
+(~ = diretório home)
+(/ = diretório root)
+
+cd directoryname => (change directory) muda para o diretório especificado
+cd - => volta para o diretório anterior
+cd / => vai para o diretório root
+cd ~ => vai para o diretório home
+cd .. => vai para o diretório acima
+
+mkdir directoryname => (make directory) cria um diretório
+rmdir directoryname => (remove directory) deleta o diretório
+
+cp arquivo_origem local_destino => (copy) copia arquivos
+cp -r arquivo_origem local_destino => (copy recursive) copia recursivamente,com diretórios e conteúdos
+rm filename => (remove) deleta arquivos
+mv arquivo_origem local_destino => (move) move arquivos
+
+sudo .. => diz ao SO que o comando deve ser executado com o superusuário root
+
+ls (list) => exibe os arquivos do diretório
+ls -l => exibe em formato de lista
+pwd (print working directory) => exibe o diretório atual
+
+crtl+alt+t => abre o terminal
+crtl+l => (comando clear) limpa a tela
+crtl+shift+c => copia no terminal
+crtl+shift+v => cola no terminal
+setas do teclado => caminham pelos comandos anteriores
+TAB => auto-completa
+exit => fecha o terminal
+
+apt (Advanced Package Tool) => gerenciador de pacotes do Debian
+apt-cache search packagename => procura no cache do apt o pacote especificado
+apt-get => modo para instalar (também é possivel utilizar somente apt)
+sudo apt-get => as alterações afetarão todos os usuários, é necessário que o root faça isso
+sudo apt-get install packagename => instala o pacote e suas dependências, se já instalado, atualiza
+sudo apt-get remove packagename => remove o pacote de forma limpa, junto com dependências não necessárias
+sudo apt-get purge packagename => remove junto com os arquivos de configuração
+sudo apt-get update => atualiza o cache do apt-get
+sudo apt-get upgrade => atualiza todos os pacotes
+sudo apt-get clean => limpa o cache do apt-get
+sudo apt dist-upgrade => atualiza a distro
+
+... | less => canaliza a saída do comando, usa-se teclas para navegar na lista e "q" para sair, passa a informação do primeiro processo para o less através do pipe "|"
+
+sudo nano filename => inicia o editor de texto nano com permissões de root e abre o arquivo especificado
+
+[comando] & -> executa o serviço no bg (backgrund)
+fg -> traz o serviço do bg para o fg (background)
+
+sudo passwd username => alterar senha no Linux
+
+Remote Desktop xdrp (adaptação de protocolo windows):
+sudo apt-get install xrdp
+hostname -I (e anota o IP)
+abre o "Conexão de Área de Trabalho Remota" no Windows e conecta
+
+GCC:
+gcc filename.c -o newFilename -o0 => -o0 -o1 -o2 -o3 são graus de otimização
+.\newFilename
+time .\newFilename => tempo de execução do programa
+
+Bug do Raspberry Configuration no BerryBoot:
+sudo blkid
+Copy the UUID for /dev/mmcblk0p1 (sem aspas)
+sudo nano /etc/fstab
+Add this line: UUID=paste_from_above /boot vfat defaults 0 2
+Save the file
+Now it will stick after reboot
+
+Fixar IP do Raspberry:
+ifconfig
+Localize as informações do IP do wlan0 (inet addr, etc)
+sudo nano /etc/dhcpcd.conf
+escreva:
+interface wlan0
+static ip_address=192.168.1.101(<-ip) /24
+static routers=192.168.1.1
+static domain_name_servers = 192.168.1.1 8.8.8.8
+depois salva e reinicia

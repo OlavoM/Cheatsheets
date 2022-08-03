@@ -1,0 +1,98 @@
+//comentário
+//JS possui memory hoisting, que iça funções pra memória que ao longo do código não foram declaradas anteriormente
+
+**TIPOS DE DADOS**
+'string'
+"string"
+10
+1.1
+true
+false
+null
+undefined
+NaN
+
+
+**VARIÁVEIS**
+var name = "Jhon"; -> variável com tipagem dinâmica
+var vazio;
+const TAM = 5; -> constante
+var lista = ["string", 100, ["embed", 200], {car : "ford"}, function(){return "drive";}];
+let letSymbol = "scoped value"; //respect the scope
+
+
+**OPERADORES**
++ -> concatena string dinamicamente até com outros tipos
+-
+*
+/ -> gera float
+%
+a**n -> ou Math.pow(a,n)
+==
+=== //strict equality, checka além dos valores (não tolera diferenças de tipos)
+!=
+!==
+>; <;//com string verifica o lenght (se não tiver diferença de caixa alta ou baixa)
+>=; <=;
+&& //and
+|| //or
+
+
+**CONDIÇÃO**
+if(condicao){
+	//bloco
+}
+else if(condicao){
+	//bloco
+}
+else{
+	//bloco
+}
+
+
+**LAÇOS**
+for(let i=0; i<lista.lenght; i++){
+	//bloco
+}
+for(var i in lista){
+	//bloco
+}
+while(condicao){
+	//bloco
+}
+
+
+**OUTPUT (CONSOLE)**
+console.log("Hello World!"); //Exibe uma mensagem no console do navegador
+
+
+**OBJETOS**
+var car = {
+    color : "red",
+    speed : "200",
+    drive : function(){return "drive";}
+};
+//alterações profundas no objeto podem ser realizadas no console após a execução
+window //highest level object
+this //refere-se ao objeto do contexto
+new objeto //cria uma nova instância do objeto
+delete //deleta elemento, retorna booleano
+
+function Apple(color, weigth) //é recomendado letra maiúscula para construtores
+{
+    this.color = color;
+    this.weigth = weigth;
+}
+Apple.prototype = {
+    eat : function(){ return "eat the apple";},
+    throw : function(){ return "throw the apple";}
+}
+var apple1 = new Apple("red", 200);
+
+**ARRAYS**
+array.shift() //retorna o primeiro elemento e o remove
+array.pop() //retorna o último elemento e o remove
+array.unshift("elemento") //insere os elementos do parâmetro no começo, retorna o length
+array.push("elemento") //insere os elementos do parâmetro no final, retorna o length
+array.splice(posicao, n_deletar) //recorta do array o numero especificado a partir da posição especificada, retorna o que deletou
+array.splice(posicao, 0, "novo elemento") //adiciona os elementos a partir da posicao especificada (deleta algo se o valor for maior que 0)

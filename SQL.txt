@@ -1,0 +1,90 @@
+**OPERADORES**
+Operadores Relacionais: = e <>; < e <=; > e >=; LIKE(_ pra um caracter, % pra nenhum ou muitos); BETWEEN;
+Operadores Lógicos: AND; OR; NOT
+Operadores Aritméticos: +; -; *; /
+Operadores Conjunturais: EXISTS; NOT EXISTS; IN; NOT IN
+Operador Nulo: NULL (IS NULL)
+Alias: AS (para tabela ou coluna)
+
+**SELECT**
+SELECT [DISTINCT] colunas
+FROM tabelas
+[WHERE condições]
+[GROUP BY colunas]
+[HAVING critérios sobre os grupos (as colunas)]
+[ORDER BY critérios de ordenação {ASC/DESC}]
+
+distinct: não permite a repetição de valores no resultado
+where: condição para a busca dos resultados
+group by: agrupamento de dados com mesmo valor
+having: condições para a definição de grupos no resultado
+order by: ordenação lógica do resultado
+
+**INSERT INTO**
+INSERT INTO tabela [(colunas)]
+VALUES (valores)
+
+**UPDATE**
+UPDATE tabela
+SET coluna1 = valor1, etc
+WHERE condições
+
+**DELETE**
+DELETE FROM tabela WHERE condições
+
+**INNER JOIN**
+SELECT colunas
+FROM tabela1 INNER JOIN tabela2
+ON tabela1.coluna = tabela2.coluna
+*junção por intersecção
+
+**LEFT JOIN**
+mesma sintaxe
+junta todos os dados da intersecção mais os tabela da esquerda (com NULL quando não há match)
+
+**RIGHT JOIN**
+mesma sintaxe
+junta todos os dados da intersecção mais os tabela da direita
+
+**FULL JOIN**
+mesma sintaxe
+junta todos os dados da intersecção mais os das tabelas
+
+**UNION**
+SELECT colunas from tabela1
+UNION (ou UNION ALL para resultados repetido)
+SELECT colunas from tabela2
+*pega as colunas e une os resultados delas numa mesma coluna resultante
+
+**CREATE DATABASE**
+CREATE DATABASE nome
+(DROP DATABASE nome --exclui)
+
+**CREATE TABLE**
+CREATE TABLE nomeTabela (coluna1 tipo1 [características], etc)
+(DROP TABLE nome --exclui)
+(TRUNCATE TABLE nome --exclui somente os dados)
+
+**KEYS**
+[dentro da especificação de colunas no CREATE TABLE]
+ID int NOT NULL PRIMARY KEY,
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+
+**DEMAIS DECLARAÇÕES DE COLUNAS**
+Age int CHECK (Age>=18),
+City varchar(255) DEFAULT 'Sandnes'
+ID int NOT NULL IDENTITY(início , incremento ) PRIMARY KEY
+
+**ALTER TABLE**
+ALTER TABLE tabela ADD coluna tipo
+ALTER TABLE tabela DROP COLUMN coluna
+
+**FUNÇÕES AGREGADAS**
+AVG: obtém o valor médio de um atributo
+COUNT: obtém o número de linhas analisadas (COUNT(atributo) retorna o número de linhas não NULL do atributo)
+MAX: obtém o maior valor de um atributo (numérico ou não)
+MIN: obtém o menor valor de um atributo (numérico ou não)
+SUM: obtém a soma dos valores de um atributo
+
+--comentário
+/*comentário*/
