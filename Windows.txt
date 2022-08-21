@@ -1,9 +1,0 @@
-Windows + d -> entra na área de trabalho
-
-windows explorer:
-F2 -> Renomeia arquivo
-
-cmd:
-chkdsk /r -> Localiza setores defeituosos no disco rígido e tenta repará-los.
-chkdsk /f -> Corrige os erros do disco. (não desligar)
-sfc /scannow -> Reparar o Windows

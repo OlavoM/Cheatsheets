@@ -51,6 +51,13 @@ fg -> traz o serviço do bg para o fg (background)
 
 sudo passwd username => alterar senha no Linux
 
+tar -xzvf arquivo.tar.gz -> descompacta tar.gz
+tar -czvf arquivo.tar.gz pasta_pra_compatar -> compacta como tar.gz
+
+whoami -> printa o usuário atual
+
+id -g -n -> printa o grupo atual
+
 Remote Desktop xdrp (adaptação de protocolo windows):
 sudo apt-get install xrdp
 hostname -I (e anota o IP)
