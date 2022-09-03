@@ -1,24 +1,39 @@
-**OPERADORES**
+# Descrição
+Este arquivo contém comandos básicos que funcionam para qualquer SQL.
+
+## Operadores
+
 Operadores Relacionais: = e <>; < e <=; > e >=; LIKE(_ pra um caracter, % pra nenhum ou muitos); BETWEEN;
+
 Operadores Lógicos: AND; OR; NOT
+
 Operadores Aritméticos: +; -; *; /
+
 Operadores Conjunturais: EXISTS; NOT EXISTS; IN; NOT IN
+
 Operador Nulo: NULL (IS NULL)
+
 Alias: AS (para tabela ou coluna)
 
-**SELECT**
+## Select
+```
 SELECT [DISTINCT] colunas
 FROM tabelas
 [WHERE condições]
 [GROUP BY colunas]
 [HAVING critérios sobre os grupos (as colunas)]
 [ORDER BY critérios de ordenação {ASC/DESC}]
+```
 
-distinct: não permite a repetição de valores no resultado
-where: condição para a busca dos resultados
-group by: agrupamento de dados com mesmo valor
-having: condições para a definição de grupos no resultado
-order by: ordenação lógica do resultado
+` DISTINCT ` : não permite a repetição de valores no resultado
+
+` WHERE ` : condição para a busca dos resultados
+
+` GROUP BY ` : agrupamento de dados com mesmo valor
+
+` HAVING ` : condições para a definição de grupos no resultado
+
+` ORDER BY ` : ordenação lógica do resultado
 
 **INSERT INTO**
 INSERT INTO tabela [(colunas)]
@@ -86,5 +101,7 @@ MAX: obtém o maior valor de um atributo (numérico ou não)
 MIN: obtém o menor valor de um atributo (numérico ou não)
 SUM: obtém a soma dos valores de um atributo
 
+**OUTROS**
 --comentário
 /*comentário*/
+https://poorsql.com/ -> site para formatar SQL (identação e clean code)
