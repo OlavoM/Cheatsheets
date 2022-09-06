@@ -1,27 +1,31 @@
 # Descrição
-Este arquivo contém comandos básicos que funcionam para qualquer SQL.
+Este arquivo contém comandos básicos que funcionam para qualquer SQL. Observação: em trechos de código, "[]" significa opcional.
+
+</br>
 
 ## Operadores
 
-Operadores Relacionais: = e <>; < e <=; > e >=; LIKE(_ pra um caracter, % pra nenhum ou muitos); BETWEEN;
+Operadores Relacionais: ` = ` e ` <> ` ; `<` e `<=`; `>` e `>=`; `LIKE(` `_` pra um caracter, `%` pra nenhum ou muitos`)`; `BETWEEN`;
 
-Operadores Lógicos: AND; OR; NOT
+Operadores Lógicos: `AND`; `OR`; `NOT`
 
-Operadores Aritméticos: +; -; *; /
+Operadores Aritméticos: `+`; `-`; `*`; `/`
 
-Operadores Conjunturais: EXISTS; NOT EXISTS; IN; NOT IN
+Operadores Conjunturais: `EXISTS`; `NOT EXISTS`; `IN`; `NOT IN`
 
-Operador Nulo: NULL (IS NULL)
+Operador Nulo: `NULL` (`IS NULL`)
 
-Alias: AS (para tabela ou coluna)
+Alias: `AS` (para tabela ou coluna)
+
+</br>
 
 ## Select
-```
+```sql
 SELECT [DISTINCT] colunas
 FROM tabelas
 [WHERE condições]
 [GROUP BY colunas]
-[HAVING critérios sobre os grupos (as colunas)]
+[HAVING critérios sobre os grupos (colunas)]
 [ORDER BY critérios de ordenação {ASC/DESC}]
 ```
 
@@ -35,73 +39,133 @@ FROM tabelas
 
 ` ORDER BY ` : ordenação lógica do resultado
 
-**INSERT INTO**
+</br>
+
+## INSERT INTO
+```sql
 INSERT INTO tabela [(colunas)]
 VALUES (valores)
+```
 
-**UPDATE**
+</br>
+
+## UPDATE
+```sql
 UPDATE tabela
 SET coluna1 = valor1, etc
 WHERE condições
+```
 
-**DELETE**
+</br>
+
+## DELETE
+```sql
 DELETE FROM tabela WHERE condições
+```
 
-**INNER JOIN**
+</br>
+
+## INNER JOIN
+```sql
 SELECT colunas
 FROM tabela1 INNER JOIN tabela2
 ON tabela1.coluna = tabela2.coluna
-*junção por intersecção
+```
+É uma junção por intersecção
 
-**LEFT JOIN**
-mesma sintaxe
-junta todos os dados da intersecção mais os tabela da esquerda (com NULL quando não há match)
 
-**RIGHT JOIN**
-mesma sintaxe
-junta todos os dados da intersecção mais os tabela da direita
+</br>
 
-**FULL JOIN**
-mesma sintaxe
-junta todos os dados da intersecção mais os das tabelas
+## LEFT JOIN
+mesma sintaxe do INNER JOIN
 
-**UNION**
+Junta todos os dados da intersecção mais os tabela da esquerda (com NULL quando não há match)
+
+</br>
+
+## RIGHT JOIN
+mesma sintaxe do INNER JOIN
+
+Junta todos os dados da intersecção mais os tabela da direita
+
+</br>
+
+## FULL JOIN
+mesma sintaxe do INNER JOIN
+
+Junta todos os dados da intersecção mais os das tabelas
+
+</br>
+
+## UNION
+```sql
 SELECT colunas from tabela1
-UNION (ou UNION ALL para resultados repetido)
+UNION (ou UNION ALL para resultados repetidos)
 SELECT colunas from tabela2
-*pega as colunas e une os resultados delas numa mesma coluna resultante
+```
+Pega as colunas e une os resultados delas numa mesma coluna resultante
 
-**CREATE DATABASE**
+</br>
+
+## CREATE DATABASE
+```sql
 CREATE DATABASE nome
-(DROP DATABASE nome --exclui)
+(DROP DATABASE nome) --exclui
+```
 
-**CREATE TABLE**
+</br>
+
+## CREATE TABLE
+```sql
 CREATE TABLE nomeTabela (coluna1 tipo1 [características], etc)
-(DROP TABLE nome --exclui)
-(TRUNCATE TABLE nome --exclui somente os dados)
+(DROP TABLE nome) --exclui
+(TRUNCATE TABLE nome) --exclui somente os dados
+```
 
-**KEYS**
+</br>
+
+## KEYS
 [dentro da especificação de colunas no CREATE TABLE]
+```sql
 ID int NOT NULL PRIMARY KEY,
 FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+```
 
-**DEMAIS DECLARAÇÕES DE COLUNAS**
+</br>
+
+## DEMAIS DECLARAÇÕES DE COLUNAS
+```sql
 Age int CHECK (Age>=18),
 City varchar(255) DEFAULT 'Sandnes'
 ID int NOT NULL IDENTITY(início , incremento ) PRIMARY KEY
+```
 
-**ALTER TABLE**
+</br>
+
+## ALTER TABLE
+```sql
 ALTER TABLE tabela ADD coluna tipo
 ALTER TABLE tabela DROP COLUMN coluna
+```
 
-**FUNÇÕES AGREGADAS**
-AVG: obtém o valor médio de um atributo
-COUNT: obtém o número de linhas analisadas (COUNT(atributo) retorna o número de linhas não NULL do atributo)
-MAX: obtém o maior valor de um atributo (numérico ou não)
-MIN: obtém o menor valor de um atributo (numérico ou não)
-SUM: obtém a soma dos valores de um atributo
+</br>
 
-**OUTROS**
---comentário
-/*comentário*/
+## FUNÇÕES AGREGADAS
+`AVG` : obtém o valor médio de um atributo
+
+`COUNT` : obtém o número de linhas analisadas (`COUNT(atributo)`) retorna o número de linhas não NULL do atributo)
+
+`MAX` : obtém o maior valor de um atributo (numérico ou não)
+
+`MIN` : obtém o menor valor de um atributo (numérico ou não)
+
+`SUM` : obtém a soma dos valores de um atributo
+
+</br>
+
+## OUTROS
+`--comentário`
+
+`/*comentário */`
+
 https://poorsql.com/ -> site para formatar SQL (identação e clean code)
