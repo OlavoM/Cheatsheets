@@ -153,7 +153,7 @@ ALTER TABLE tabela DROP COLUMN coluna
 ## FUNÇÕES AGREGADAS
 `AVG` : obtém o valor médio de um atributo
 
-`COUNT` : obtém o número de linhas analisadas (`COUNT(atributo)`) retorna o número de linhas não NULL do atributo)
+`COUNT` : obtém o número de linhas analisadas, `COUNT(atributo)` retorna o número de linhas não NULL do atributo
 
 `MAX` : obtém o maior valor de um atributo (numérico ou não)
 
