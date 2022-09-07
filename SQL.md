@@ -170,6 +170,6 @@ ALTER TABLE tabela DROP COLUMN coluna
 ## OUTROS
 `--comentário`
 
-`/*comentário */`
+`/*comentário de várias linhas*/`
 
 https://poorsql.com/ -> site para formatar SQL (identação e clean code)
