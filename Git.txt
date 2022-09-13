@@ -61,7 +61,8 @@ git checkout <branch-name> -> muda o working directory para a branch
 git checkout -b <branch-name> -> cria a branch e muda pra ela
 git merge <branch-name> -> [dentro do destino, tipo a master] faz o merge (passa pra atual o conteúdo da branch especificada)
 git branch -> lista todas as branches existentes no repositório
-git branch -d <branch-name> -> deleta a branch
+git branch -d <branch-name> -> deleta a branch local
+git branch -D <branch-name> -> força o delete da branch local
 conflitos são resolvidos no próprio código com conflito
 
 **GIT STASH**
