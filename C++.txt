@@ -29,3 +29,13 @@ switch (opc){
 //Converter String
 varInt = stoi(varString);
 varFloat = stof(varString);
+
+** OPERADOR CONDICIONAL**
+// Escrever:
+if (condicao) {
+	a = 10;
+} else {
+	b = 20;
+}
+// É o mesmo que escrever:
+(condicao) ? a = 10 : b = 20;
