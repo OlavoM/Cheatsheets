@@ -1,7 +1,5 @@
 # R
 
-TODO: funções básicas da linguagem
-
 ## Vetores
 - ` vetor = c(1,2,3,4,5,6) ` => ` [1] 1 2 3 4 5 6 `
 - ` vetor = c("a","b",1,2) ` => ` "a" "b" "1" "2" `
@@ -19,6 +17,17 @@ TODO: funções básicas da linguagem
 - ` abs(x) ` => absoluto de x
 - ` sum(vetor) ` => soma os itens do vetor
 - ` length(vetor) ` => conta o número de elementos no vetor
+
+<br>
+
+## Funções Básicas para Estatística
+- sendo `v` um vetor tal que v = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+- ` mean(v) ` => média
+- ` median(v) ` => mediana
+- ` var(v) ` => variância
+- ` sd(v) ` => desvio padrão
+- ` cv <-  sd(v)/mean(v) ` => coeficiente de variação
+- ` quantile(v) ` => quartis
 
 <br>
 
