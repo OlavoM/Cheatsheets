@@ -173,17 +173,38 @@ ALTER TABLE tabela DROP COLUMN coluna
 ```sql
 CREATE [OR REPLACE] PROCEDURE nome_da_procedure
 [( argumentoUm modo tipo_do_dado,
-    argumentoUm modo tipo_do_dado,
-    argumentoUm modo tipo_do_dado )]
+    argumentoDois modo tipo_do_dado,
+    argumentoTres modo tipo_do_dado )]
 IS
-    [variaveis_locais e/ou contantes]
+    [variaveis_locais e/ou constantes]
 BEGIN
     -- Bloco PL/SQL
 END nome_da_procedure;
 ```
 - `modo` deve ser `IN`, `OUT` ou `IN OUT`
-- se executa com `EXECUTE nome_da_procedure (argumentoUm modo tipo_do_dado, argumentoUm modo tipo_do_dado, argumentoUm modo tipo_do_dado);`
+- se executa com `EXECUTE nome_da_procedure (argumentoUm, argumentoDois, argumentoTres);`
 - se exclui com `DROP PROCEDURE nome_da_procedure;`
+
+</br>
+
+## FUNCTION
+- Semelhante a uma PROCEDURE, mas retorna um valor
+```sql
+CREATE [OR REPLACE] FUNCTION nome_da_funcao
+[( argumentoUm IN tipo_do_dado,
+    argumentoDois IN tipo_do_dado,
+    argumentoTres IN tipo_do_dado )]
+RETURN tipo_do_dado
+IS
+    [variaveis_locais e/ou constantes]
+BEGIN
+    -- Bloco PL/SQL
+    RETURN variavel;
+END nome_da_funcao;
+```
+- Executa e exibe o resultado com `SELECT nome_da_funcao(Argumento) FROM tabela`
+- É possível executar só chamando a função mesmo
+- Se exclui com `DROP FUNCTION nome_da_funcao;`
 
 </br>
 
