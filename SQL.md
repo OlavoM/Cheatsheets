@@ -208,6 +208,12 @@ END nome_da_funcao;
 
 </br>
 
+## TRIGGER
+- É um bloco disparado automaticamente após INSERT, DELETE ou UPDATE
+
+
+</br>
+
 ## OUTROS
 - `--comentário`
 
