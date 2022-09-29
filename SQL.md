@@ -3,23 +3,23 @@
 </br>
 
 ## Descrição
-Este arquivo contém comandos básicos que funcionam para qualquer SQL. Observação: em trechos de código, "[]" significa opcional.
+Este arquivo contém comandos básicos que funcionam para praticamente qualquer SQL. Observação: em trechos de código, "[]" significa opcional.
 
 </br>
 
 ## Operadores
 
-Operadores Relacionais: ` = ` e ` <> ` ; `<` e `<=`; `>` e `>=`; `LIKE(` `_` pra um caracter, `%` pra nenhum ou muitos`)`; `BETWEEN`;
+- Operadores Relacionais: ` = ` e ` <> ` ; `<` e `<=`; `>` e `>=`; `LIKE(` `_` pra um caracter, `%` pra nenhum ou muitos`)`; `BETWEEN`;
 
-Operadores Lógicos: `AND`; `OR`; `NOT`
+- Operadores Lógicos: `AND`; `OR`; `NOT`
 
-Operadores Aritméticos: `+`; `-`; `*`; `/`
+- Operadores Aritméticos: `+`; `-`; `*`; `/`
 
-Operadores Conjunturais: `EXISTS`; `NOT EXISTS`; `IN`; `NOT IN`
+- Operadores Conjunturais: `EXISTS`; `NOT EXISTS`; `IN`; `NOT IN`
 
-Operador Nulo: `NULL` (`IS NULL`)
+- Operador Nulo: `NULL` (`IS NULL`)
 
-Alias: `AS` (para tabela ou coluna)
+- Alias: `AS` (para tabela ou coluna)
 
 </br>
 
@@ -155,21 +155,41 @@ ALTER TABLE tabela DROP COLUMN coluna
 </br>
 
 ## FUNÇÕES AGREGADAS
-`AVG` : obtém o valor médio de um atributo
+- `AVG` : obtém o valor médio de um atributo
 
-`COUNT` : obtém o número de linhas analisadas, `COUNT(atributo)` retorna o número de linhas não NULL do atributo
+- `COUNT` : obtém o número de linhas analisadas, `COUNT(atributo)` retorna o número de linhas não NULL do atributo
 
-`MAX` : obtém o maior valor de um atributo (numérico ou não)
+- `MAX` : obtém o maior valor de um atributo (numérico ou não)
 
-`MIN` : obtém o menor valor de um atributo (numérico ou não)
+- `MIN` : obtém o menor valor de um atributo (numérico ou não)
 
-`SUM` : obtém a soma dos valores de um atributo
+- `SUM` : obtém a soma dos valores de um atributo
+
+</br>
+
+## PROCEDURE
+- Obs: sintaxe ORACLE
+- procedures são executadas a partir de um programa ou executadas manualmente por um usuário
+```sql
+CREATE [OR REPLACE] PROCEDURE nome_da_procedure
+[( argumentoUm modo tipo_do_dado,
+    argumentoUm modo tipo_do_dado,
+    argumentoUm modo tipo_do_dado )]
+IS
+    [variaveis_locais e/ou contantes]
+BEGIN
+    -- Bloco PL/SQL
+END nome_da_procedure;
+```
+- `modo` deve ser `IN`, `OUT` ou `IN OUT`
+- se executa com `EXECUTE nome_da_procedure (argumentoUm modo tipo_do_dado, argumentoUm modo tipo_do_dado, argumentoUm modo tipo_do_dado);`
+- se exclui com `DROP PROCEDURE nome_da_procedure;`
 
 </br>
 
 ## OUTROS
-`--comentário`
+- `--comentário`
 
-`/*comentário de várias linhas*/`
+- `/*comentário de várias linhas*/`
 
-https://poorsql.com/ -> site para formatar SQL (identação e clean code)
+- https://poorsql.com/ -> site para formatar SQL (identação e clean code)
