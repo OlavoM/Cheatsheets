@@ -90,39 +90,39 @@
 <br>
 
 ## Git Tag
-git tag -a v1.0 -m "Versão 1.0" -> cria tag anotada(-a que registra criador, etc) e com mensagem (-m)
-git tag -a v0.0 <sha1 do commit antigo, ou o começo dele> -m "Versao 0.0" -> criaa tag para commit antigos
-git show <tag> -> exibe as informações da tag
-git checkout <tag> -> retorna para o estado daquela tag
-git checkout main -> retorna para a main
-git tag -d v0.0 -> deleta a tag
+- `git tag -a v1.0 -m "Versão 1.0"` => cria tag anotada(-a que registra criador, etc) e com mensagem (-m)
+- `git tag -a v0.0 <sha1 do commit antigo, ou o começo dele> -m "Versao 0.0"` => cria a tag para commit antigos
+- `git show <tag>` => Exibe as informações da tag
+- `git checkout <tag>` => Retorna para o estado daquela tag
+- `git checkout main` => Retorna para a main
+- `git tag -d v0.0` -> Deleta a tag
 
 <br>
 
 ## Outros Comandos
-git diff -> mostra diferenças específicas em arquivos alterados
-git diff --staged -> mostra as diferenças que estão no modo staged
-git mv <file_from> <file_to> -> move arquivos no git, renomeia se git mv <file_name> <new_file_name>
-gitk -> abre uma GUI de relatório dos comitts no git bash
-git init --bare -> cria repositório pushable
+- `git diff` => Mostra diferenças específicas em arquivos alterados
+- `git diff --staged` => Mostra as diferenças que estão no modo staged
+- `git mv <file_from> <file_to>` => Move arquivos no git, renomeia se git mv <file_name> <new_file_name>
+- `gitk` => Abre uma GUI de relatório dos comitts no git bash
+- `git init --bare` => Cria repositório pushable
 
 <br>
 
 ## Git Bash
-inicia na pasta desejada ao alterar essa opção em "propriedades" do ícone (volta pro padrão se estiver escrito --cd-to-home no destino)
+- Inicia na pasta desejada ao alterar essa opção em "propriedades" do ícone (volta pro padrão se estiver escrito --cd-to-home no destino)
 - Realmente não recomendo o uso dessa ferramenta, no Windows a experiência com o powershell é muito mais agradável
 
 <br>
 
 ## GitLab
-cria ssh no windows (powershell) com:
-ssh-keygen -t ed25519 -C "<email>" -> ED25519 keys are more secure and performant than RSA keys
-armazena a chave no local padrão
-coloca senha (qualquer coisa as chaves podem ser reescritas repetindo o procedimento)
-visualiza a chave pública com:
-cat ~/.ssh/id_ed25519.pub -> powershell
-cat ~/.ssh/id_ed25519.pub | clip -> gitbash, copia pra área de transferência
-git config --global http.sslVerify false -> desativa essa verificação pra intranet
+- Cria ssh no windows (powershell) com:
+    - ssh-keygen -t ed25519 -C "<email>" -> ED25519 keys are more secure and performant than RSA keys
+    - armazena a chave no local padrão
+    - coloca senha (qualquer coisa as chaves podem ser reescritas repetindo o procedimento)
+- Visualiza a chave pública com:
+- `cat ~/.ssh/id_ed25519.pub` => powershell
+- `cat ~/.ssh/id_ed25519.pub | clip` => gitbash, copia pra área de transferência
+- `git config --global http.sslVerify false` => desativa essa verificação pra intranet
 
 <br>
 
