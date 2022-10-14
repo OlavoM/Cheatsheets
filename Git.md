@@ -1,12 +1,14 @@
-**CONFIGURAÇÃO INICIAL**
-git config --global user.name "<usuario>"
-git config --global user.email "<email>"
+# Git
 
-**PRIMEIRO COMMIT**
-na pasta desejada -> git init -> cria o subdiretório .git
-git add * -> adiciona o arquivos para o modo staged/tracked (adiciona para o próximo commit)
-git commit -m 'initial project version' -> primeiro commit (pode ser qualquer mensagem)
-git status -> checka o status dos arquivos
+## Configuração Inicial
+- `git config --global user.name "<usuario>"`
+- `git config --global user.email "<email>"`
+
+## Primeiro Commit
+- na pasta desejada use `git init` => cria o subdiretório .git
+- `git add *` => adiciona todos os arquivos para o modo staged/tracked (adiciona para o próximo commit)
+- `git commit -m "initial project version"` => faz o primeiro commit (pode ser qualquer mensagem)
+- `git status` => verifica o status dos arquivos
 
 **PRINCIPAIS COMANDOS**
 git add <file> -> adiciona um arquivo específico para o modo staged/tracked
@@ -32,6 +34,7 @@ exemploIgnorar.txt
 executavel.exe
 
 **GIT PULL & PUSH COM REPOSITÓRIO REMOTO CRIADO PRIMEIRO**
+- Este método é muito mais simples para criar repositórios
 [após criar o repositório remoto ou pushable]
 git clone <local do respositório remoto> <OutroNomeProDiretório(opcional)>
 [faz o que precisa, add e commit]
