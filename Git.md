@@ -7,7 +7,7 @@
 <br>
 
 ## Primeiro Commit
-- na pasta desejada use `git init` => Cria o subdiretório .git
+- Na pasta desejada use `git init` => Cria o subdiretório .git
 - `git add *` => Adiciona todos os arquivos para o modo staged/tracked (adiciona para o próximo commit)
 - `git commit -m "initial project version"` => Faz o primeiro commit (pode ser qualquer mensagem)
 - `git status` => Verifica o status dos arquivos
@@ -78,8 +78,8 @@
 - `git branch` => Lista todas as branches existentes no repositório
 - `git branch -a` => Lista todas as branches incluindo as que estão no repositório remoto
 - `git branch -d <branch-name>` => Deleta a branch local
-- `git branch -D <branch-name>` => força o delete da branch local
-- conflitos são resolvidos no próprio código com conflito
+- `git branch -D <branch-name>` => Força o delete da branch local
+- Conflitos são resolvidos no próprio código com conflito
 
 <br>
 
@@ -117,16 +117,15 @@
 ## GitLab
 - Cria ssh no windows (powershell) com:
     - ssh-keygen -t ed25519 -C "<email>" -> ED25519 keys are more secure and performant than RSA keys
-    - armazena a chave no local padrão
-    - coloca senha (qualquer coisa as chaves podem ser reescritas repetindo o procedimento)
+    - Armazena a chave no local padrão
+    - Coloca senha (qualquer coisa as chaves podem ser reescritas repetindo o procedimento)
 - Visualiza a chave pública com:
-- `cat ~/.ssh/id_ed25519.pub` => powershell
-- `cat ~/.ssh/id_ed25519.pub | clip` => gitbash, copia pra área de transferência
-- `git config --global http.sslVerify false` => desativa essa verificação pra intranet
+- `cat ~/.ssh/id_ed25519.pub` => Powershell
+- `cat ~/.ssh/id_ed25519.pub | clip` => Gitbash, copia pra área de transferência
 
 <br>
 
 ## Submodules
-git submodule update --init
-git submodule update --init --rebase
-git submodule update --init --force
+- `git submodule update --init`
+- `git submodule update --init --rebase`
+- `git submodule update --init --force`
