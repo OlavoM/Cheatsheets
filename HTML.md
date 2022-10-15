@@ -1,4 +1,8 @@
-**EXEMPLO**
+# HTML
+
+## Arquivo HTML de Exemplo
+
+```html
 <!DOCTYPE html>
 <!--Comentário-->
 <html lang="pt-br">
@@ -44,6 +48,7 @@
 	<script src="myapp.js"></script> <!--o script mais embaixo (body) auxilia na distribuição do tempo de carregamento da página-->
     </body>
 </html>
+```
 
-**OUTROS**
-https://validator.w3.org/
+## Links Úteis
+- https://validator.w3.org/
