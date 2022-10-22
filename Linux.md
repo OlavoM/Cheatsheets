@@ -28,12 +28,12 @@
 
 <br>
 
-- `sudo comando` => diz ao SO que o comando deve ser executado com o superusuário root
+- `sudo comando` => Diz ao SO que o comando deve ser executado com o superusuário root
 
 <br>
 
 - `ls` => (list) exibe os arquivos do diretório
-- `ls -l` => exibe em formato de lista, com informações 
+- `ls -l` => Exibe em formato de lista, com informações 
 - `pwd`  => (print working directory) exibe o diretório atual
 
 <br>
