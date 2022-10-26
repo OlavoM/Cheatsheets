@@ -93,6 +93,10 @@
 
 <br>
 
+- `lsb_release -a`=> Checka a versão do Ubuntu
+
+<br>
+
 ## Remote Desktop xdrp (adaptação de protocolo windows)
 - `sudo apt-get install xrdp`
 - `hostname -I` (e anota o IP)
