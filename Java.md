@@ -27,14 +27,17 @@ public class Main { //comentário
 
 <br>
 
-**OPERADORES**
-x++; //ou ++x, incrementa x
-x--; //ou --x, decrementa x
-&& //AND
-|| //OR
-! //NOT
+## Operadores
+- `x++;` => Ou `++x`, incrementa x
+- `x--;` => Ou `--x`, decrementa x
+- `&&` => AND
+- `||` => OR
+- `!` => NOT
 
-**IF & ELSE**
+<br>
+
+## IF & ELSE
+```java
 if (condicao) {
     //bloco
 }
@@ -44,6 +47,9 @@ else if (condicao){
 else {
     //bloco
 }
+```
+
+```java
 String resultado = (hora<18) ? "Bom Dia" : "Boa Noite"; //ternary operator, if e else de uma linha
 switch(expression) {
   case x:
@@ -55,30 +61,41 @@ switch(expression) {
   default:
     // code block if there is no case match
 }
+```
 
-**LAÇOS**
+<br>
+
+## Laços
+```java
 while(condicao) {
     //bloco
 }
+
 do {
     //bloco
 }
 while(condicao);
+
 for (int i = 0; i < 5; i++) {
     //bloco
 }
+
 for (type elemento : vetor) { //for-each
     //bloco
 }
+
 break; //sai do laço
 continue; //interrompe a iteração e continua no laço
+```
 
-**STRING**
-texto.length()
-texto.indexOf("string") //procura a string dento da string e retorna o índice da primeira ocorrência
-texto.concat(textoDois) //concatena assim como o uso do operador +
-"\"aspas\"" // o \ ignora o carectere especial a seguir
-//concatenar numero e string gera string
+<br>
+
+## String
+- `texto.length()`
+- `texto.indexOf("string")` => Procura a string dentro da string e retorna o índice da primeira ocorrência
+- `texto.concat(textoDois)` => Concatena assim como o uso do operador `+`
+- `"\"aspas\""` => O `\` ignora o carectere especial que o segue
+- Concatenar número e string gera string
 
 **VETORES**
 String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; //ou String cars[]
