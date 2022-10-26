@@ -70,20 +70,28 @@ switch(expression) {
 while(condicao) {
     //bloco
 }
+```
 
+```java
 do {
     //bloco
 }
 while(condicao);
+```
 
+```java
 for (int i = 0; i < 5; i++) {
     //bloco
 }
+```
 
+```java
 for (type elemento : vetor) { //for-each
     //bloco
 }
+```
 
+```java
 break; //sai do laço
 continue; //interrompe a iteração e continua no laço
 ```
