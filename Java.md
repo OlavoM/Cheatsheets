@@ -1,23 +1,31 @@
-**HELLO WORLD**
+# Java
+
+## Hello World
+```java
 public class Main { //comentário
     public static void main(String[] args){
         System.out.println("Hello World!"); //detecta a tipagem dinamicamente
     }
 }
+```
 
-**VARIÁVEIS**
-String name = "João";
-byte //números de -128 a 127 (1 byte)
-short //números de -32,768 a 32,767 (2 bytes)
-int //números de -2,147,483,648 a 2,147,483,647 (4 bytes)
-long myNum = 15000000000L; //números de -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 (8 bytes)
-float var = 10.23f; //números com 6 a 7 dígitos decimais (4 bytes)
-float f1 = 10e3f; //numero científico, com "e" indicando potência de 10 (10000.0)
-double myNum = 19.99d; //números com 15 dígitos decimais (8 bytes)
-double d1 = 5*10e2d; //numero científico, com "e" indicando potência de 10 (5000.0)
-char var = 'a';
-boolean var = true; //ou false
-final int TAM = 5; //constante
+<br>
+
+## Variáveis
+- `String name = "João";`
+- `byte` => Números de -128 a 127 (1 byte)
+- `short` => Números de -32,768 a 32,767 (2 bytes)
+- `int` => Números de -2,147,483,648 a 2,147,483,647 (4 bytes)
+- `long myNum = 15000000000L;` => Números de -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 (8 bytes)
+- `float var = 10.23f;` => Números com 6 a 7 dígitos decimais (4 bytes)
+- `float f1 = 10e3f;` => Número científico, com "e" indicando potência de 10 (10000.0)
+- `double myNum = 19.99d;` => Números com 15 dígitos decimais (8 bytes)
+- `double d1 = 5*10e2d;` => Número científico, com "e" indicando potência de 10 (5000.0)
+- `char var = 'a';`
+- `boolean var = true;` => Ou `false`
+- `final int TAM = 5;` => Constante
+
+<br>
 
 **OPERADORES**
 x++; //ou ++x, incrementa x
