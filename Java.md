@@ -195,3 +195,9 @@ javac Principal.java Classe.java ->pra dependencia de classes na mesma pasta
 
 **OUTROS**
 // a hierarquia de diretórios pode confundir o debugger do VS Code
+
+<br>
+
+## Comandos
+- `jps` - Lista todos os processos que estão rodando na JVM
+- `jshell` - Shell de Java, boa para testar trechos de código
