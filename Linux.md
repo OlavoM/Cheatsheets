@@ -38,12 +38,13 @@
 
 <br>
 
-- crtl+alt+t => Abre o terminal
-- crtl+l => (comando clear) limpa a tela
-- crtl+shift+c => Copia no terminal
-- crtl+shift+v => Cola no terminal
+- crtl + alt + t => Abre o terminal
+- crtl + l => (comando clear) limpa a tela
+- crtl + shift + c => Copia no terminal
+- crtl + shift + v => Cola no terminal
 - setas do teclado => Caminham pelos comandos anteriores
 - TAB => Auto-completa
+- ctrl + r => Pesquisa pelos comandos anteriores
 - `exit` => Fecha o terminal
 
 <br>
