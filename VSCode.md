@@ -15,3 +15,7 @@
 - Localizar e Substituir aceita regex, exemplo: `^.*(palavra1|palavra2|palavra3).*\n?`
 
 - Em Localizar e Substituir, alt + enter seleciona as palavras encontradas
+
+- Para ativar o crtl + d para duplicar linha:
+    - Ir em File > Preferences > Keyboard Shortcuts
+    - alterar editor.action.copyLinesDownAction
