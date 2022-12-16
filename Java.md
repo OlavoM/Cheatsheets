@@ -197,47 +197,50 @@ String turnoAtual = Turno.MANHA.getValor(); // Acesso ao valor
 
 <br>
 
-**INPUT**
+## Input
+```java
 Scanner myObject = new Scanner(System.in);
 System.out.println("Enter username");
 String userName = myObject.nextLine(); //nextLine é para strings
 System.out.println("Username is: " + userName);
+```
+```java
 inteiro = Scan.nextInt();
+```
 
 <br>
 
-**MATH**
+## Math
+```java
 Math.max(5, 10);
 Math.min(5, 10);
-Math.sqrt(64); //raiz quadrada
+Math.sqrt(64); // Raiz quadrada
 Math.abs(-4.7);
-Math.random(); //entre 0.0 e 1.0
+Math.random(); // Entre 0.0 e 1.0
 int randomNum = (int)(Math.random() * 101);  // 0 a 100
+```
 
 <br>
 
-**TRY-CATCH**
+## Try-Catch
+```java
 try {
-    //bloco de código
+    // Bloco de código
 }
 catch(Exception e) {
-    //tratamento do erro (output amigável por exemplo)
+    // Tratamento do erro (output amigável por exemplo)
 }
 finally {
-    //código a executar independente do resultado do try catch
+    // Código a executar independente do resultado do try catch
 }
+```
 
 <br>
 
-**RODAR POR LINHA DE COMANDO**
-javac Server.java -> deve gerar o arquivo Server.class
-start java Server -> start, no Windows, força a execução em uma segunda janela (no Linux, use java Server &)
-javac Principal.java Classe.java ->pra dependencia de classes na mesma pasta
-
-<br>
-
-**OUTROS**
-// a hierarquia de diretórios pode confundir o debugger do VS Code
+## Executar por linha de comando
+- `javac Server.java` -> Gera o arquivo Server.class
+- `start java Server` -> Start, no Windows, força a execução em uma segunda janela (no Linux, use java Server &)
+- `javac Principal.java Classe.java` -> Para dependência de classes no mesmo diretório
 
 <br>
 
