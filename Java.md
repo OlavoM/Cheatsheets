@@ -105,62 +105,97 @@ continue; //interrompe a iteração e continua no laço
 - `"\"aspas\""` => O `\` ignora o carectere especial que o segue
 - Concatenar número e string gera string
 
-**VETORES**
+<br>
+
+## Vetores
+```java
 String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; //ou String cars[]
 int[] myNum = {10, 20, 30, 40};
-vetor.length //propriedade que retorna o length
+vetor.length // Propriedade que retorna o length
 int matriz[][] = {{1,2,3,4},{5,6,7}};
+```
 
-**METHODS**
-static void myMethod(tipo parametro, tipo parametroDois){ //precisa ser declarado dentro de uma classe
-    //bloco
-    //static significa que o método pertence à classe e não é um objeto
-    //void pois não retorna nada
+<br>
+
+## Métodos
+```java
+static void myMethod(tipo parametro, tipo parametroDois){ // Precisa ser declarado dentro de uma classe
+    // Bloco
+    // Static significa que o método pertence à classe e não é um objeto, ou seja, pode ser acessado sem instanciar um objeto
+    // Void pois não retorna nada
 }
+```
 
-**CLASSES**
-public class Main { //sempre com letra maiúscula e filename igual (Main.java)
-  int x = 5; //atributos
+<br>
+
+## Classes
+```java
+public class Main { // Sempre com letra maiúscula e filename igual (Main.java)
+  int x = 5; // Atributos
   int y;
-  public Main(){ //construtor
+  public Main(){ // Construtor
       y = 3;
   }
 }
-class Ponto{ //para ser acessada no mesmo arquivo, public para ser acessada em outro arquivo
+```
+
+```java
+class Ponto{ // Declarada assim para ser acessada no mesmo arquivo, declara-se com public para acessar em outro arquivo
 }
-final class Vehicle{ //com "final" a classe não pode ser herdada
-    //bloco
+```
+
+```java
+final class Vehicle{ // Com "final" a classe não pode ser herdada
+    // Bloco
 }
-abstract class Animal { //classe abstrata, não cria objetos e não pode ser acessada, apenas pode ser herdada
-    public abstract void animalSound(); //método abstrato, usável somente em classes abstratasa, não tem corpo, é preenchido na herança  
+```
+
+```java
+abstract class Animal { // Classe abstrata, não cria objetos e não pode ser acessada, apenas pode ser herdada
+    public abstract void animalSound(); // Método abstrato, usável somente em classes abstratas, não tem corpo, é preenchido na herança  
 }
+```
+
+```java
 class Pig extends Animal{
     public void animalSound(){
-        //bloco
+        // Bloco
     }
 }
-interface Animal { //classe totalmente abstrata, só agrupa métodos vazios
+```
+
+```java
+interface Animal { // Interface, uma classe totalmente abstrata, só agrupa métodos vazios
     public void animalSound(); 
-    int x = 10; //atributo public, static e final
+    int x = 10; // Atributo public, static e final
 }
-class Pig implements Animal{ //a classe implementa a interface, pode implementar várias interfaces
+```
+
+```java
+class Pig implements Animal{ // A classe implementa a interface, pode implementar várias interfaces ao mesmo tempo
     public void animalSound(){
-        //bloco
+        // Bloco
     }
 }
-enum Turno { //grupo de constantes, enum = "enumerations"
-    MANHA("manhã"), //valor para o turno
+```
+
+```java
+enum Turno { // Grupo de constantes, enum = "enumerations"
+    MANHA("manhã"), // Valor para o turno
     TARDE("tarde"),
     NOITE("noite");
-    private String valor; //atributo
-    Turno(String valor){ //construtor
+    private String valor; // Atributo
+    Turno(String valor){ // Construtor
         this.valor = valor;
     }
-    public String getValor(){ //getter
+    public String getValor(){ // Getter
         return valor;
     }
 }
-String turnoAtual = Turno.MANHA.getValor(); //acesso ao valor
+String turnoAtual = Turno.MANHA.getValor(); // Acesso ao valor
+```
+
+<br>
 
 **INPUT**
 Scanner myObject = new Scanner(System.in);
@@ -169,6 +204,8 @@ String userName = myObject.nextLine(); //nextLine é para strings
 System.out.println("Username is: " + userName);
 inteiro = Scan.nextInt();
 
+<br>
+
 **MATH**
 Math.max(5, 10);
 Math.min(5, 10);
@@ -176,6 +213,8 @@ Math.sqrt(64); //raiz quadrada
 Math.abs(-4.7);
 Math.random(); //entre 0.0 e 1.0
 int randomNum = (int)(Math.random() * 101);  // 0 a 100
+
+<br>
 
 **TRY-CATCH**
 try {
@@ -188,10 +227,14 @@ finally {
     //código a executar independente do resultado do try catch
 }
 
+<br>
+
 **RODAR POR LINHA DE COMANDO**
 javac Server.java -> deve gerar o arquivo Server.class
 start java Server -> start, no Windows, força a execução em uma segunda janela (no Linux, use java Server &)
 javac Principal.java Classe.java ->pra dependencia de classes na mesma pasta
+
+<br>
 
 **OUTROS**
 // a hierarquia de diretórios pode confundir o debugger do VS Code
