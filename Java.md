@@ -117,6 +117,16 @@ int matriz[][] = {{1,2,3,4},{5,6,7}};
 
 <br>
 
+## Listas
+```java
+ArrayList<String> listaDeStrings = new ArrayList<String>();
+listaDeStrings.add("Item");
+listaDeStrings.get(0);
+listaDeStrings.remove(0);
+```
+
+<br>
+
 ## Métodos
 ```java
 static void myMethod(tipo parametro, tipo parametroDois){ // Precisa ser declarado dentro de uma classe
@@ -199,13 +209,14 @@ String turnoAtual = Turno.MANHA.getValor(); // Acesso ao valor
 
 ## Input
 ```java
-Scanner myObject = new Scanner(System.in);
+Scanner scan = new Scanner(System.in);
 System.out.println("Enter username");
-String userName = myObject.nextLine(); //nextLine é para strings
+String userName = scan.nextLine(); //nextLine é para strings
 System.out.println("Username is: " + userName);
+scan.close();
 ```
 ```java
-inteiro = Scan.nextInt();
+inteiro = scan.nextInt();
 ```
 
 <br>
