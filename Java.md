@@ -124,6 +124,17 @@ listaDeStrings.add("Item");
 listaDeStrings.get(0);
 listaDeStrings.remove(0);
 ```
+<br>
+
+## Maps
+```java
+HashMap<String, Integer> mapa = new HashMap<String, Integer>(); // Chave String para valor int
+// Os elementos não são ordenados
+// Rápida a busca/inserção de dados
+
+mapa.put(name, phone); // Permite inserir valore e chaves nulas
+mapa.get(name); // Retorna null, se não tiver um valor com essa chave
+```
 
 <br>
 
