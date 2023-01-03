@@ -124,6 +124,7 @@ listaDeStrings.add("Item");
 listaDeStrings.get(0);
 listaDeStrings.remove(0);
 ```
+
 <br>
 
 ## Maps
@@ -134,6 +135,18 @@ HashMap<String, Integer> mapa = new HashMap<String, Integer>(); // Chave String 
 
 mapa.put(name, phone); // Permite inserir valore e chaves nulas
 mapa.get(name); // Retorna null, se não tiver um valor com essa chave
+```
+<br>
+
+## HashSet
+```java
+HashSet<String> set = new HashSet<String>(); // Coleção de dados, não possui valores repetidos
+// Os elementos não são ordenados
+// Rápida a busca/inserção de dados
+
+set.add("Valor"); // Se esse valor já está no set, ele simplesmente não adiciona
+
+set.size(); // Retorna o número de itens
 ```
 
 <br>
