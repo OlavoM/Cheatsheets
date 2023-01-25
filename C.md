@@ -143,36 +143,50 @@ struct nomeDaEstrutura{
 
     `int milhao = 1'000'000;`
 
-//Pthread
-pthread_t threads[QTD]; //declaracao de threads
-pthread_create(&threads[0], NULL, depositos, &saldo); //global, invocando thread, especificando vetor e posição, NULL para configurações default, função e parametros dela (só tem & aí pois era um ponteiro mesmo)
-pthread_join(threads[0], NULL); //reune as treads na main
-pthread_mutex_t trava; //global, declaração de mutex, uma trava para seções críticas
+<br>
+
+## Pthread
+```c
+pthread_t threads[QTD]; // Declaracao de threads
+pthread_create(&threads[0], NULL, depositos, &saldo); // Global, invocando thread, especificando vetor e posição, NULL para configurações default, função e parametros dela (só tem & aí pois era um ponteiro mesmo)
+pthread_join(threads[0], NULL); // Reune as treads na main
+pthread_mutex_t trava; // Global, declaração de mutex, uma trava para seções críticas
 pthread_mutex_init(&trava, NULL); 
-void *depositos(double *x){ //função para thread tem que ter * (parametro era ponteiro)
+
+void *depositos(double *x){ // Função para thread tem que ter * (parametro era ponteiro)
     for(int i=0; i<21474830; i++){
         pthread_mutex_lock(&trava);
         *x += 5.0;
         pthread_mutex_unlock(&trava);
     }
-    pthread_exit(0); //sai da thread
+    pthread_exit(0); // Sai da thread
 }
-gcc -pthread nomeDoPrograma.c -o nomeDoPrograma //compila com esse comando
+```
+`gcc -pthread nomeDoPrograma.c -o nomeDoPrograma` => Compila com esse comando
 
-//OpenMP
+<br>
+
+## OpenMP
+```c
 #include <omp.h>
 int maxThreads = omp_get_max_threads(); //threads lógicas
 IDThread = omp_get_thread_num();
+
 #pragma omp parallel
 {
 	//trecho paralelo, automaticamente será executado em todas as threads disponíveis
 }
+
 #pragma omp parallel for
     for() //for paralelo automaticamente distribuído entre as threads
-gcc nomeDoPrograma.c -o nomeDoPrograma -fopenmp //compila com esse comando
-OMP_NUM_THREADS=$x //x processadores, eh uma variavel de ambiente
+```
+`gcc nomeDoPrograma.c -o nomeDoPrograma -fopenmp` => Compila com esse comando
 
-//erros comuns do compilador
-initializer element is not constant //alguma variável não está dentro de uma função e ocorre uma confusão no global
+`OMP_NUM_THREADS=$x` => x processadores, é uma variavel de ambiente
+
+<br>
+
+## Erros comuns do compilador
+`initializer element is not constant` => Alguma variável não está dentro de uma função e ocorre uma confusão no global
 
 
