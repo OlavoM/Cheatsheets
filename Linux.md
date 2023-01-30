@@ -98,6 +98,10 @@
 
 <br>
 
+- `cat /etc/os-release`=> Checka a distro do Linux
+
+<br>
+
 ## Remote Desktop xdrp (adaptação de protocolo windows)
 - `sudo apt-get install xrdp`
 - `hostname -I` (e anota o IP)
