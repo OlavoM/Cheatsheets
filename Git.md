@@ -129,3 +129,8 @@
 - `git submodule update --init`
 - `git submodule update --init --rebase`
 - `git submodule update --init --force`
+
+<br>
+
+## Atualizar versão do Git
+- Para windows: `git update-git-for-windows`
