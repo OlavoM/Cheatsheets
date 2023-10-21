@@ -1,5 +1,8 @@
 # C
 
+## Como instalar GCC no Windows
+- Artigo mais recente e prático: [Terminal Root - Como Instalar GCC](https://terminalroot.com.br/2022/12/como-instalar-gcc-gpp-mingw-no-windows.html)
+
 ## Operadores
 ```c
 x++; // Ou ++x, incrementa x
