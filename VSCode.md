@@ -19,3 +19,8 @@
 - Para ativar o crtl + d para duplicar linha:
     - Ir em File > Preferences > Keyboard Shortcuts
     - alterar editor.action.copyLinesDownAction
+
+
+## Extensões
+
+- Leaper: `Tab` para pular aspas e parênteses (licença MIT).
