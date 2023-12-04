@@ -6,8 +6,6 @@
 
 - F2 só processa variavel, não renomeia comentário
 
-- Atom One Dark => Tema do VS Code mais confortável
-
 - ctrl + shif + k => Deleta linha ou linhas selecionadas
 
 - ctrl + f => Localizar e Substituir
