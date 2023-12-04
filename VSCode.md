@@ -24,3 +24,13 @@
 ## Extensões
 
 - Leaper: `Tab` para pular aspas e parênteses (licença MIT).
+
+- Atom One Dark Theme: Tema para VS Code.
+
+- Excel Viewer: Visualizador de arquivos Excel/CSV em formato de tabela.
+
+- Live Server: Servidor local e simples para desenvolvimento web.
+
+- Live Share: Multiplayer de VS Code.
+
+- Reload: Botão para recarregar o VS Code na barra inferior.
