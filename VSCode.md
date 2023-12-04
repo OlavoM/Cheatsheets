@@ -25,12 +25,12 @@
 
 - Leaper: `Tab` para pular aspas e parênteses (licença MIT).
 
-- Atom One Dark Theme: Tema para VS Code.
+- Atom One Dark Theme: Tema para VS Code (licença MIT).
 
-- Excel Viewer: Visualizador de arquivos Excel/CSV em formato de tabela.
+- Excel Viewer: Visualizador de arquivos Excel/CSV em formato de tabela (licença MIT).
 
-- Live Server: Servidor local e simples para desenvolvimento web.
+- Live Server: Servidor local e simples para desenvolvimento web (licença MIT).
 
-- Live Share: Multiplayer de VS Code.
+- Live Share: Multiplayer de VS Code (licença própria - Microsoft).
 
-- Reload: Botão para recarregar o VS Code na barra inferior.
+- Reload: Botão para recarregar o VS Code na barra inferior (sem licença).
