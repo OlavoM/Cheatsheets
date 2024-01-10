@@ -105,6 +105,9 @@
 - `git mv <file_from> <file_to>` => Move arquivos no git, renomeia se git mv <file_name> <new_file_name>
 - `gitk` => Abre uma GUI de relatório dos comitts no git bash
 - `git init --bare` => Cria repositório pushable
+- Para deletar o último commit no GitHub:
+    - `git reset --hard HEAD^`
+    - `git push -f`
 
 <br>
 
