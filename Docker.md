@@ -3,6 +3,7 @@
 ## Comandos Gerais
 - ` sudo docker ps ` => Lista os container em execução
 - `docker --version` => Exibe a versão do docker instalado
+- `docker exec -it <container-name> /bin/bash` => executa (iterativamente) um terminal bash dentro do container especificado
 
 <br>
 
