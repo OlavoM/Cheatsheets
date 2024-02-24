@@ -13,3 +13,4 @@ fn main() {
     println!("Hello, World!"); // Imprime na tela
 }
 ```
+- Para compilar: `rustc hello.rs`
