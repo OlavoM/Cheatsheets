@@ -140,3 +140,12 @@ static routers=192.168.1.1
 static domain_name_servers = 192.168.1.1 8.8.8.8
 ```
 - Depois salva e reinicia
+
+<br>
+
+## Aumentar memória swap do Raspberry
+- `sudo dphys-swapfile swapoff`
+- `sudo nano /etc/dphys-swapfile`
+- altere a linha colocando os valores em MB `CONF_SWAPSIZE=1024`
+- `sudo dphys-swapfile setup`
+- `sudo dphys-swapfile swapon`
